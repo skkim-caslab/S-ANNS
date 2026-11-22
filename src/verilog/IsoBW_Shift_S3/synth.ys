@@ -1,0 +1,15 @@
+read_verilog -sv ../FP32_common/fp32_common.v ../IsoBW_common/isobw_pes.v
+hierarchy -check -top pe_shift -chparam LANES 17 -chparam S 3 -chparam SIGNED 1
+flatten
+proc
+opt
+fsm
+opt
+memory
+techmap
+opt
+dfflibmap -liberty ../libs/asap7.lib
+abc -liberty ../libs/asap7.lib
+opt
+write_verilog -noattr synthesized.v
+tee -o ../../../data/verilog/isobw_shift_s3.out stat -liberty ../libs/asap7.lib

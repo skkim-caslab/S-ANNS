@@ -1,0 +1,7 @@
+architecture,dataset,dim,direct_scan_ms,ivfpq_lut_ms,lut_over_direct,annotation
+UPMEM,GIST1M,960,2.8483,0.0102,0.0036,279x faster
+UPMEM,MSTuring1B,100,0.2967,0.0102,0.0344,29x faster
+UPMEM,DEEP1B,96,0.2848,0.0102,0.0359,28x faster
+AiM,GIST1M,960,0.0883,0.8468,9.5869,10x slower
+AiM,MSTuring1B,100,0.0282,0.8468,30.0017,30x slower
+AiM,DEEP1B,96,0.0271,0.8468,31.2576,31x slower

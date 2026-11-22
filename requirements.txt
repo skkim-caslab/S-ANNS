@@ -1,0 +1,6 @@
+# Figure and table scripts (src/ae, src/pot)
+numpy
+matplotlib
+# Recall experiments (src/ann)
+pandas
+faiss-cpu

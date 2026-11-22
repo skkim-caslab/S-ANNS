@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "S-ANNS: Energy-Efficient Approximate Nearest Neighbor Search via Shift-Based PIM Architecture"
+repository-code: "https://github.com/skkim-caslab/S-ANNS"
+authors:
+  - family-names: Kim
+    given-names: Seulki
+    affiliation: DGIST
+  - family-names: Jang
+    given-names: Yewon
+    affiliation: Yonsei University
+  - family-names: Kim
+    given-names: Minho
+    affiliation: DGIST
+  - family-names: Kim
+    given-names: Daehoon
+    affiliation: Yonsei University
+preferred-citation:
+  type: article
+  title: "S-ANNS: Energy-Efficient Approximate Nearest Neighbor Search via Shift-Based PIM Architecture"
+  authors:
+    - family-names: Kim
+      given-names: Seulki
+    - family-names: Jang
+      given-names: Yewon
+    - family-names: Kim
+      given-names: Minho
+    - family-names: Kim
+      given-names: Daehoon
+  journal: "IEEE Computer Architecture Letters"
+  publisher:
+    name: IEEE
+  volume: 25
+  issue: 2
+  start: 436
+  end: 439
+  year: 2026
+  doi: "10.1109/LCA.2026.3743912"
+  url: "https://ieeexplore.ieee.org/document/11738663/"

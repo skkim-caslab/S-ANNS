@@ -1,0 +1,15 @@
+read_verilog -sv ../FP32_common/fp32_common.v ../FP32_common/fp32mac_seqsa.v
+hierarchy -check -top fp32mac_seqsa
+flatten
+proc
+opt
+fsm
+opt
+memory
+techmap
+opt
+dfflibmap -liberty ../libs/asap7.lib
+abc -liberty ../libs/asap7.lib
+opt
+write_verilog -noattr synthesized.v
+tee -o ../../../data/verilog/fp32mac_seq.out stat -liberty ../libs/asap7.lib

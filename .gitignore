@@ -1,0 +1,46 @@
+# ----------------------------------------------------------------------------
+# Python
+# ----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ----------------------------------------------------------------------------
+# Datasets, index caches and raw experiment outputs (src/ann/)
+# Datasets are downloaded into data/datasets/, coarse quantizers and list
+# assignments are cached in data/cache/, and every run writes its CSV to
+# src/ann/results/<dataset>/. The CSVs the figures read are versioned under
+# data/anns/ and data/recall/.
+# ----------------------------------------------------------------------------
+data/datasets/
+data/cache/
+src/ann/results/
+*.fbin
+*.ibin
+*.fvecs
+*.ivecs
+*.index
+*.npy
+
+# ----------------------------------------------------------------------------
+# Synthesis outputs (src/verilog/); reports go to data/verilog/
+# ----------------------------------------------------------------------------
+src/verilog/*/synthesized.v
+src/verilog/yosys
+src/verilog/sta
+*.vvp
+
+# ----------------------------------------------------------------------------
+# AE outputs (reference figures live in docs/figures/)
+# ----------------------------------------------------------------------------
+src/ae/*/*.png
+src/ae/table1/table1_pe_datapaths.csv
+
+# ----------------------------------------------------------------------------
+# Editors / OS
+# ----------------------------------------------------------------------------
+*.swp
+.DS_Store
+.vscode/
+.idea/

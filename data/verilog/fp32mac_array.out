@@ -1,0 +1,260 @@
+
+17. Printing statistics.
+
+=== fp32mac_par ===
+
+   Number of wires:              33648
+   Number of wire bits:         113949
+   Number of public wires:        1430
+   Number of public wire bits:   81731
+   Number of ports:                  6
+   Number of port bits:            587
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              32498
+     $scopeinfo                    208
+     A2O1A1Ixp33_ASAP7_75t_SRAM    758
+     A2O1A1O1Ixp25_ASAP7_75t_SRAM    112
+     AND2x2_ASAP7_75t_SRAM        1047
+     AND3x1_ASAP7_75t_SRAM         635
+     AND4x1_ASAP7_75t_SRAM         403
+     AND5x1_ASAP7_75t_SRAM           9
+     AO211x2_ASAP7_75t_SRAM         35
+     AO21x1_ASAP7_75t_SRAM        1064
+     AO221x1_ASAP7_75t_SRAM         56
+     AO22x1_ASAP7_75t_SRAM         168
+     AO31x2_ASAP7_75t_SRAM           4
+     AO32x1_ASAP7_75t_SRAM           9
+     AO33x2_ASAP7_75t_SRAM           1
+     AOI211xp5_ASAP7_75t_SRAM      881
+     AOI21xp33_ASAP7_75t_SRAM     2069
+     AOI221xp5_ASAP7_75t_SRAM       75
+     AOI22xp33_ASAP7_75t_SRAM      489
+     AOI311xp33_ASAP7_75t_SRAM      19
+     AOI31xp33_ASAP7_75t_SRAM      134
+     AOI321xp33_ASAP7_75t_SRAM       1
+     AOI32xp33_ASAP7_75t_SRAM       33
+     DFFASRHQNx1_ASAP7_75t_SRAM     72
+     INVx1_ASAP7_75t_SRAM         2344
+     MAJIxp5_ASAP7_75t_SRAM        574
+     MAJx2_ASAP7_75t_SRAM          287
+     NAND2xp33_ASAP7_75t_SRAM     4061
+     NAND3xp33_ASAP7_75t_SRAM      903
+     NAND4xp25_ASAP7_75t_SRAM      333
+     NAND5xp2_ASAP7_75t_SRAM        22
+     NOR2xp33_ASAP7_75t_SRAM      4050
+     NOR3xp33_ASAP7_75t_SRAM       500
+     NOR4xp25_ASAP7_75t_SRAM        78
+     NOR5xp2_ASAP7_75t_SRAM         32
+     O2A1O1Ixp33_ASAP7_75t_SRAM    770
+     OA211x2_ASAP7_75t_SRAM        416
+     OA21x2_ASAP7_75t_SRAM         421
+     OA221x2_ASAP7_75t_SRAM          1
+     OA22x2_ASAP7_75t_SRAM          15
+     OA31x2_ASAP7_75t_SRAM           7
+     OAI211xp5_ASAP7_75t_SRAM      698
+     OAI21xp33_ASAP7_75t_SRAM     1466
+     OAI221xp5_ASAP7_75t_SRAM       10
+     OAI22xp33_ASAP7_75t_SRAM       88
+     OAI311xp33_ASAP7_75t_SRAM      30
+     OAI31xp33_ASAP7_75t_SRAM      123
+     OAI321xp33_ASAP7_75t_SRAM       1
+     OAI32xp33_ASAP7_75t_SRAM       20
+     OR2x2_ASAP7_75t_SRAM          500
+     OR3x1_ASAP7_75t_SRAM          290
+     OR4x1_ASAP7_75t_SRAM           40
+     OR5x1_ASAP7_75t_SRAM            5
+     XNOR2xp5_ASAP7_75t_SRAM      3938
+     XOR2xp5_ASAP7_75t_SRAM       2193
+
+   Area for cell type $scopeinfo is unknown!
+
+   Chip area for module '\fp32mac_par': 2775.944520
+     of which used for sequential elements: 27.293760 (0.98%)
+
+Startpoint: rst_n (input port clocked by clk)
+Endpoint: _64436_ (recovery check against rising-edge clock clk)
+Path Group: asynchronous
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   1.00    1.00 ^ input external delay
+   0.00    1.00 ^ rst_n (in)
+   0.00    1.00 ^ _64436_/SETN (DFFASRHQNx1_ASAP7_75t_SRAM)
+           1.00   data arrival time
+
+   2.86    2.86   clock clk (rise edge)
+   0.00    2.86   clock network delay (ideal)
+  -0.10    2.76   clock uncertainty
+   0.00    2.76   clock reconvergence pessimism
+           2.76 ^ _64436_/CLK (DFFASRHQNx1_ASAP7_75t_SRAM)
+   4.43    7.19   library recovery time
+           7.19   data required time
+---------------------------------------------------------
+           7.19   data required time
+          -1.00   data arrival time
+---------------------------------------------------------
+           6.19   slack (MET)
+
+
+Startpoint: q_vec_in[20] (input port clocked by clk)
+Endpoint: _64507_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   1.00    1.00 v input external delay
+   0.00    1.00 v q_vec_in[20] (in)
+  41.44   42.44 ^ _59407_/Y (AOI22xp33_ASAP7_75t_SRAM)
+  58.27  100.71 v _59541_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  43.81  144.52 v _59543_/Y (AO21x1_ASAP7_75t_SRAM)
+  45.21  189.73 ^ _59680_/Y (AOI31xp33_ASAP7_75t_SRAM)
+  45.33  235.06 v _59683_/Y (AOI211xp5_ASAP7_75t_SRAM)
+  46.54  281.60 ^ _59686_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  48.08  329.68 v _59804_/Y (AOI22xp33_ASAP7_75t_SRAM)
+  40.65  370.33 ^ _59805_/Y (MAJIxp5_ASAP7_75t_SRAM)
+  31.09  401.41 v _59810_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  44.24  445.66 ^ _59905_/Y (AOI211xp5_ASAP7_75t_SRAM)
+  45.87  491.52 v _59941_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  32.21  523.73 ^ _60077_/Y (NAND3xp33_ASAP7_75t_SRAM)
+  36.01  559.74 v _60079_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  49.98  609.72 v _60165_/Y (OA211x2_ASAP7_75t_SRAM)
+  44.55  654.28 v _60207_/Y (OR3x1_ASAP7_75t_SRAM)
+  34.75  689.02 ^ _60284_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  50.40  739.42 v _60332_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  35.98  775.40 ^ _60415_/Y (NAND3xp33_ASAP7_75t_SRAM)
+  36.33  811.73 v _60470_/Y (NAND3xp33_ASAP7_75t_SRAM)
+  42.82  854.55 ^ _60605_/Y (AOI22xp33_ASAP7_75t_SRAM)
+  42.27  896.83 v _60607_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  43.09  939.92 ^ _60736_/Y (AOI22xp33_ASAP7_75t_SRAM)
+  43.72  983.64 v _60740_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  42.22 1025.85 ^ _60801_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  43.06 1068.92 ^ _60880_/Y (OR3x1_ASAP7_75t_SRAM)
+  27.41 1096.32 v _61015_/Y (NAND3xp33_ASAP7_75t_SRAM)
+  36.54 1132.86 ^ _61018_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  41.03 1173.89 v _61148_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  46.81 1220.70 ^ _61150_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  47.86 1268.56 v _61281_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  54.35 1322.91 ^ _61285_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  48.31 1371.22 v _61318_/Y (AOI211xp5_ASAP7_75t_SRAM)
+  39.75 1410.97 ^ _61411_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  42.59 1453.56 v _61443_/Y (NAND3xp33_ASAP7_75t_SRAM)
+  40.61 1494.17 ^ _61551_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  41.46 1535.63 v _61680_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  39.01 1574.65 ^ _61684_/Y (NAND3xp33_ASAP7_75t_SRAM)
+  34.57 1609.22 v _61700_/Y (AOI22xp33_ASAP7_75t_SRAM)
+  53.89 1663.11 ^ _61820_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  56.64 1719.75 v _61958_/Y (AOI21xp33_ASAP7_75t_SRAM)
+  41.71 1761.46 ^ _61968_/Y (OAI211xp5_ASAP7_75t_SRAM)
+  53.17 1814.63 v _62023_/Y (AOI311xp33_ASAP7_75t_SRAM)
+  37.73 1852.35 ^ _62025_/Y (A2O1A1Ixp33_ASAP7_75t_SRAM)
+  34.27 1886.62 v _62029_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  48.31 1934.93 ^ _62031_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  37.67 1972.60 v _62033_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  46.59 2019.19 ^ _62035_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  41.04 2060.24 v _62036_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  53.57 2113.81 ^ _62038_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  57.62 2171.43 ^ _62039_/Y (AO211x2_ASAP7_75t_SRAM)
+  36.28 2207.71 v _62041_/Y (A2O1A1Ixp33_ASAP7_75t_SRAM)
+  38.90 2246.61 ^ _62043_/Y (A2O1A1Ixp33_ASAP7_75t_SRAM)
+  34.67 2281.28 v _62047_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  48.29 2329.57 ^ _62049_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  45.38 2374.95 v _62050_/Y (MAJIxp5_ASAP7_75t_SRAM)
+ 192.23 2567.18 ^ _62054_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+ 136.12 2703.30 v _62085_/Y (AOI21xp33_ASAP7_75t_SRAM)
+ 104.77 2808.07 ^ _62090_/Y (OAI22xp33_ASAP7_75t_SRAM)
+  64.36 2872.43 v _62097_/Y (AOI31xp33_ASAP7_75t_SRAM)
+ 141.18 3013.61 v _62099_/Y (XNOR2xp5_ASAP7_75t_SRAM)
+ 150.52 3164.13 ^ _62129_/Y (NAND2xp33_ASAP7_75t_SRAM)
+ 109.74 3273.87 v _51479_/Y (NOR2xp33_ASAP7_75t_SRAM)
+  51.05 3324.92 ^ _51746_/Y (OAI31xp33_ASAP7_75t_SRAM)
+  63.23 3388.15 v _52181_/Y (NAND4xp25_ASAP7_75t_SRAM)
+  47.53 3435.69 ^ _52182_/Y (NAND2xp33_ASAP7_75t_SRAM)
+  56.64 3492.32 ^ _52195_/Y (XOR2xp5_ASAP7_75t_SRAM)
+  37.33 3529.66 v _52210_/Y (NOR2xp33_ASAP7_75t_SRAM)
+  46.80 3576.45 ^ _52365_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  53.81 3630.27 ^ _52366_/Y (XOR2xp5_ASAP7_75t_SRAM)
+  47.48 3677.74 ^ _52402_/Y (XOR2xp5_ASAP7_75t_SRAM)
+  41.73 3719.48 v _52556_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  49.04 3768.51 ^ _52646_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  41.45 3809.96 v _52882_/Y (A2O1A1Ixp33_ASAP7_75t_SRAM)
+  33.30 3843.27 ^ _52968_/Y (NAND2xp33_ASAP7_75t_SRAM)
+  44.50 3887.76 ^ _53044_/Y (XOR2xp5_ASAP7_75t_SRAM)
+  45.27 3933.03 ^ _53119_/Y (XOR2xp5_ASAP7_75t_SRAM)
+  47.22 3980.25 v _53128_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  42.27 4022.52 ^ _53456_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  42.02 4064.54 v _53632_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  39.08 4103.62 ^ _53986_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  44.15 4147.77 v _54347_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  47.57 4195.34 ^ _54718_/Y (OAI221xp5_ASAP7_75t_SRAM)
+  57.67 4253.01 ^ _54731_/Y (AO33x2_ASAP7_75t_SRAM)
+  40.49 4293.49 v _55076_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  49.11 4342.60 ^ _55351_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  39.57 4382.17 v _55586_/Y (A2O1A1Ixp33_ASAP7_75t_SRAM)
+  45.05 4427.22 ^ _55706_/Y (AOI31xp33_ASAP7_75t_SRAM)
+  52.61 4479.83 v _55952_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  51.07 4530.90 ^ _56123_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  53.25 4584.15 v _56233_/Y (OAI21xp33_ASAP7_75t_SRAM)
+  44.59 4628.74 ^ _56431_/Y (AOI311xp33_ASAP7_75t_SRAM)
+  50.03 4678.77 v _56658_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  47.30 4726.07 ^ _56859_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  55.37 4781.44 ^ _57069_/Y (OA31x2_ASAP7_75t_SRAM)
+  38.18 4819.62 v _57226_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  44.30 4863.92 ^ _57237_/Y (MAJIxp5_ASAP7_75t_SRAM)
+  48.71 4912.63 v _57418_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  48.80 4961.43 ^ _57575_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  43.91 5005.34 v _57577_/Y (NOR2xp33_ASAP7_75t_SRAM)
+  39.52 5044.86 v _57579_/Y (XNOR2xp5_ASAP7_75t_SRAM)
+  44.87 5089.73 ^ _57580_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  47.68 5137.41 v _57661_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  44.00 5181.41 ^ _57903_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  44.38 5225.79 v _57907_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  49.85 5275.63 ^ _58045_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  43.91 5319.54 v _58191_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  47.95 5367.49 ^ _58326_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  54.06 5421.54 v _58464_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  57.05 5478.59 v _58589_/Y (OA211x2_ASAP7_75t_SRAM)
+  40.07 5518.66 ^ _58594_/Y (OAI31xp33_ASAP7_75t_SRAM)
+  53.00 5571.66 v _58707_/Y (A2O1A1Ixp33_ASAP7_75t_SRAM)
+  41.70 5613.36 ^ _58767_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  35.43 5648.79 v _58787_/Y (A2O1A1O1Ixp25_ASAP7_75t_SRAM)
+  45.39 5694.17 ^ _58800_/Y (O2A1O1Ixp33_ASAP7_75t_SRAM)
+  45.45 5739.62 ^ _58801_/Y (OA21x2_ASAP7_75t_SRAM)
+  25.83 5765.45 v _58812_/Y (A2O1A1Ixp33_ASAP7_75t_SRAM)
+  35.01 5800.46 ^ _58816_/Y (AOI211xp5_ASAP7_75t_SRAM)
+  34.12 5834.58 ^ _58817_/Y (XNOR2xp5_ASAP7_75t_SRAM)
+   0.00 5834.58 ^ _64507_/D (DFFASRHQNx1_ASAP7_75t_SRAM)
+        5834.58   data arrival time
+
+   2.86    2.86   clock clk (rise edge)
+   0.00    2.86   clock network delay (ideal)
+  -0.10    2.76   clock uncertainty
+   0.00    2.76   clock reconvergence pessimism
+           2.76 ^ _64507_/CLK (DFFASRHQNx1_ASAP7_75t_SRAM)
+ -36.90  -34.14   library setup time
+         -34.14   data required time
+---------------------------------------------------------
+         -34.14   data required time
+        -5834.58   data arrival time
+---------------------------------------------------------
+        -5868.72   slack (VIOLATED)
+
+
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             2.18e-02   8.44e-04   2.46e-09   2.26e-02   3.9%
+Combinational          2.49e-01   3.15e-01   3.73e-07   5.65e-01  96.1%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  2.71e-01   3.16e-01   3.75e-07   5.87e-01 100.0%
+                          46.2%      53.8%       0.0%
