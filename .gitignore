@@ -32,7 +32,7 @@ src/verilog/sta
 *.vvp
 
 # ----------------------------------------------------------------------------
-# AE outputs (reference figures live in docs/figures/)
+# AE outputs
 # ----------------------------------------------------------------------------
 src/ae/*/*.png
 src/ae/table1/table1_pe_datapaths.csv
